@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "rubiccube-solver"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "rubiccube_solver"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.24.2"
+torch = "^2.0.0"
+jupyterlab = "^3.6.3"
+matplotlib = "^3.7.1"
+tensorboard = "^2.13.0"
+
+[tool.poetry.group.dev.dependencies]
+jupyterlab-vim = "^0.16.0"
+jupyterlab = "^3.6.3"
+line-profiler = "^4.0.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
